@@ -31,3 +31,13 @@ bad_nifti: output file for extracted 'bad' volumes
 good_nifti: output file for remaining 'good' volumes
 stddev: integer threshold for how many standard deviations from the mean should be considered "bad"
 ```
+
+## find_bad_volumes_percent.py  
+Same as find_bad_volumes.py but uses percent difference from the mean instead of std_dev. Percentages should be entered as a decimal (eg, .10 for 10%)
+```
+usage: python3 find_bad_volumes.py input_nifti bad_nifti good_nifti stddev
+input_nifti: file to inspect
+bad_nifti: output file for extracted 'bad' volumes
+good_nifti: output file for remaining 'good' volumes
+percent: difference from the mean that should be considered "bad"
+```
